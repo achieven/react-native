@@ -4,11 +4,11 @@ import axios from  'axios';
 
 class AlbumsList extends Component {
     componentWillMount() {
-        // axios.get('https://rallycoding.herokuapp.com/api/music_albums').then(
-        //         (Response) => {
-        //             console.log(Response);
-        //         }
-        // )
+        axios.get('https://rallycoding.herokuapp.com/api/music_albums').then(
+                (Response) => {
+                    console.log(Response);
+                }
+        );
     }
 
     render() {
